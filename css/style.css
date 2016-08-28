@@ -1,0 +1,60 @@
+﻿ul,li {
+	list-style:none;
+	 margin:0;
+	 padding:0
+}
+
+.banner { width:100%; height:400px; position:relative; overflow:hidden; }
+
+.banner .SL_bgSet{ position:relative; }
+.banner .SL_bgSet li{ position:absolute; width:100%; height:400px; display:none; }
+
+.banner .SL_menuWrap{ position:absolute; width:1000px; left:50%; margin-left:-500px; }
+.banner .SL_menuWrap .SL_menuSet{ position:absolute; width:100%; top:360px; text-align:center; font-size:0; }
+.banner .SL_menuWrap .SL_menuSet li{ cursor:pointer; margin:0 3px; display:inline;}
+
+.banner .SL_prev{ position:absolute; left:100px; top:170px; cursor:pointer; display:none}
+.banner .SL_next{ position:absolute; right:100px; top:170px; cursor:pointer; display:none}
+
+header, footer{
+	text-align:center !important;
+}
+.ui.dimmer{
+	z-index: 10 !important;
+}
+.message{
+	top: 100px;
+	left: 25%;
+	width: 50%;
+	height: 500px;
+	position: absolute !important;
+	z-index: 10;
+	opacity: 0.8;
+}
+.ui.segments, .ui.segment{
+	border: 0px !important;
+	box-shadow: none !important;
+}
+.e1 img,.e2 img,.e3 img,.e4 img,.e5 img,.e6 img {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.e1 img:hover,.e3 img:hover,.e5 img:hover {
+	cursor:pointer;
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+.e2 img:hover,.e4 img:hover,.e6 img:hover {
+	cursor:pointer;
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	transform: rotate(5deg);
+}

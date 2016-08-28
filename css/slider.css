@@ -1,0 +1,58 @@
+.wp ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.wp a {
+    color: #fff;
+}
+.wp {
+    position: relative;
+    height: 900px;
+    background: #fff;
+}
+.wp #slider {
+    position: absolute;
+    width: 280px;
+    height: 900px;
+    padding: 0 20px;
+    left: 0;
+    top: 0;
+}
+.wp .fl {
+    float: left
+}
+.wp #slider img {
+    display: block;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+.wp #slider li {
+    padding: 20px 0;
+    border-bottom: 1px dashed #ccc;
+    overflow: hidden;
+    width: 100%;
+}
+.wp #slider p {
+    font-size: 12px;
+    margin: 0;
+    padding-left: 68px;
+    color: #333;
+    line-height: 20px;
+}
+.introduction {
+    display: none;
+}
+.intro-popup {
+    width: 300px;
+    position: absolute;
+    color: #fff;
+    background-color: black;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 0.8; 
+    z-index: 100;
+}
