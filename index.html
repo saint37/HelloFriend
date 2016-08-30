@@ -51,13 +51,18 @@
 					</div>
 					<div class="row">
 						<!-- personal info-->
-						<div class="six wide centered column lt">
+						<div class="four wide centered column lt">
 							<div class="wp">
 								<ul id="slider">
 								<li><img class="ui tiny circular image fl" src="./images/e1.jpg"/>
 									<p> 这是铁锒 </p>
 									<div class="introduction">
-										我是一匹来自北方的狼
+										<img class="ui small image fl intro-img" src="./images/test.jpg"/>
+										<p class="intro-content">我是一匹来自北方的狼我是一匹来自北方的狼我是一匹来自北方的狼我是一匹来自北方的狼
+										我是一匹来自北方的狼我是一匹来自北方的狼我是一匹来自北方的狼我是一匹来自北方的狼
+										我是一匹来自北方的狼我是一匹来自北方的狼我是一匹来自北方的狼我是一匹来自北方的狼
+										我是一匹来自北方的狼我是一匹来自北方的狼我是一匹来自北方的狼我是一匹来自北方的狼
+										我是一匹来自北方的狼我是一匹来自北方的狼我是一匹来自北方的狼我是一匹来自北方的狼</p>
 									</div>
 								</li>
 								<li><img class="ui tiny circular image fl" src="./images/e2.jpg"/>
@@ -178,9 +183,14 @@
 							</div>
 						</div>
 						<!-- events -->
-						<div class="ten wide column rt">
+						<div class="twelve wide column rt">
 							<div class="ui blurring event">
 								<div class="ui inverted dimmer"></div>
+								<div class="ui horizontal segments">
+									<div class="ui segment">
+										<img class="ui centered medium rounded image" src="./images/1.gif">
+									</div>
+								</div>								
 								<div class="ui horizontal segments">
 									<!-- events1 -->
 									<div id="event1" class="ui segment e1" onclick="showdimmer1()">
@@ -215,11 +225,6 @@
 									<div id="event6" class="ui segment e6" onclick="showdimmer6()">
 										<img class="ui centered small rounded image" src="./images/e6.jpg">
 										<p>花样应有尽有</p>
-									</div>
-								</div>
-								<div class="ui horizontal segments">
-									<div class="ui segment">
-										<img class="ui centered medium rounded image" src="./images/1.gif">
 									</div>
 								</div>
 							</div>
@@ -468,7 +473,6 @@ $(document).ready(function(){
 		s.resume();
 	});
 	$('.wp').delegate('li', 'mouseenter', function(){
-		console.log('show intro');
 		intro=$(this).find('.introduction').clone();
 		position=$(this).position();
 		intro.toggleClass('introduction intro-popup').css({top:position.top+10, left:300});
