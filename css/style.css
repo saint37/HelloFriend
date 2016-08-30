@@ -1,10 +1,49 @@
-﻿ul,li {
+﻿body{
+	position:relative;
+	text-align: center;
+}
+.two{
+}
+.twelve{
+	z-index: 10;
+}
+.page{
+	min-height:100%; width:100%;
+	background: #fff;
+	box-shadow: 0px 4px 15px #181818;
+}
+.shadow{
+	-moz-box-shadow:0 0 5px 5px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow:0 0 5px 5px rgba(0, 0, 0, 0.4); 
+	box-shadow:0 0 5px 5px rgba(0, 0, 0, 0.4);
+	background-image: url(../images/bg.jpg);
+	background-repeat: repeat;
+}
+.leftbg{
+	background-image: url(../images/title.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%;
+	background-color: #f3f2f1;
+}
+.rightbg{
+	background-image: url(../images/bamboo.png);
+	background-repeat: no-repeat;
+	background-color: #f3f2f1;
+}
+ul,li {
 	list-style:none;
-	 margin:0;
-	 padding:0
+	margin:0;
+	padding:0
+}
+.divider{
+	width: 500px;
+	height: 33px;
+	border: 0px;
+	opacity: 0.5;
 }
 
-.banner { width:100%; height:400px; position:relative; overflow:hidden; }
+.banner { width:100%; height:400px; position:relative; overflow:hidden; border-radius: 20px;}
 
 .banner .SL_bgSet{ position:relative; }
 .banner .SL_bgSet li{ position:absolute; width:100%; height:400px; display:none; }
@@ -19,15 +58,56 @@
 header, footer{
 	text-align:center !important;
 }
+footer {
+	width:100%;
+	height:100px;
+	background:#323232;
+	position:absolute;
+  	z-index: -20;
+}
+.copyrights {
+	margin:0 auto;
+	height:80px;
+	position:fixed;
+	left:0px;
+	right:0px;
+	bottom:0px;
+  	z-index: -15；
+}
+.copyrights p {
+	color:#a0a0a0;
+	line-height:24px;
+}
+header {
+	z-index: 50;
+	position:fixed;
+	height: 200px;
+	width: 150px;
+	background-image: url(../images/logo.png);
+	opacity: 0.3;
+	background-size: 100%;
+}
+.lt{
+
+}
+.rt{
+
+}
+.ui.horizontal.segments{
+	background: transparent !important;
+}
 .ui.dimmer{
 	z-index: 10 !important;
 }
 .message{
-	top: 100px;
-	left: 25%;
-	width: 50%;
-	height: 500px;
-	position: absolute !important;
+	left: 50%;
+	top: 50%;
+	margin-top:-300px !important;
+	margin-left: -400px !important; 
+	width: 800px;
+	height: 600px;
+	position: fixed !important;
+	overflow: auto;
 	z-index: 10;
 	opacity: 0.8;
 }
