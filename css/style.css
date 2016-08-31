@@ -38,7 +38,7 @@ ul,li {
 }
 .divider{
 	width: 500px;
-	height: 33px;
+	height: 50px;
 	border: 0px;
 	opacity: 0.5;
 }
@@ -81,10 +81,10 @@ footer {
 header {
 	z-index: 50;
 	position:fixed;
-	height: 200px;
+	height: 250px;
 	width: 150px;
 	background-image: url(../images/logo.png);
-	opacity: 0.3;
+	opacity: 0.9;
 	background-size: 100%;
 }
 .lt{
