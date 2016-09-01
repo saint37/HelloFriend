@@ -131,6 +131,12 @@ h1{
 }
 .c9{
   height: 100%;
+  background-image: url(../images/back10.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.c10{
+  height: 100%;
   background-image: url(../images/back9.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
