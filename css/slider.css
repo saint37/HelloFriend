@@ -23,6 +23,9 @@
 .wp .fl {
     float: left;
 }
+.wp .fr {
+    float: right;
+}
 .wp #slider img {
     display: block;
     padding: 2px;
