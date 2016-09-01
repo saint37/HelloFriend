@@ -109,7 +109,20 @@ header {
 	position: fixed !important;
 	overflow: auto;
 	z-index: 10;
-	opacity: 0.8;
+	opacity: 0.9;
+    text-align:justify;
+}
+.message p{
+	text-indent: 2em;
+	font-family: STFangsong;
+	line-height:25px;
+}
+.message img{
+	padding: 10px;
+}
+.closemsg{
+	padding: 0 !important;
+	float: right;
 }
 .ui.segments, .ui.segment{
 	border: 0px !important;

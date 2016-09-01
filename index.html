@@ -1,575 +1,262 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="renderer" content="webkit">
-
-    <title>Hello Rail</title>
-	<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/slider.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/semantic.min.js"></script>
-	<script type="text/javascript" src="js/MotionBanner.min.js"></script>
-	<script type="text/javascript" src="js/slider.js"></script>
+    
+    <title>ScrollMe</title>
+    <link rel="stylesheet" type="text/css" href="css/style-intro.css">
+    
+    <script src='js/jquery.min.js'></script>
+    <script src='js/jquery.scrollme.js'></script>
 </head>
 
 <body>
-<!-- header begin -->
-<header></header>
-<div class="page">
-	<!-- the main content begin -->
-	<div class="main">
-		<div class="ui grid">
-			<div class="two wide column leftbg"></div>
-			<div class="twelve wide centered aligned column">
-				<div class="ui grid shadow">
-					<div class="row">
-						<!-- photo sliders -->
-						<div class="banner">
-							<ul class="SL_bgSet">
-								<li style="display: list-item; background: url(images/bg1.jpg) 50% 0px no-repeat;"></li>
-								<li style="display: none; background: url(images/bg2.jpg) 50% 0px no-repeat;"></li>
-								<li style="display: none; background: url(images/bg3.jpg) 50% 0px no-repeat;"></li>
-								<li style="display: none; background: url(images/bg4.jpg) 50% 0px no-repeat;"></li>
-							</ul>
-							<div class="SL_menuWrap">
-								<ul class="SL_menuSet">
-									<li class="select"><img src="./images/btn_on.gif" alt=""></li>
-									<li class=""><img src="./images/btn_off.gif" alt=""></li>
-									<li class=""><img src="./images/btn_off.gif" alt=""></li>
-									<li class=""><img src="./images/btn_off.gif" alt=""></li>
-								</ul>
-								<div class="SL_next" style="display: none;"><img src="./images/nextArrow.png" alt="NEXT"></div>
-								<div class="SL_prev" style="display: none;"><img src="./images/prevArrow.png" alt="PREV"></div>
-							</div>
-						</div>				
-					</div>
-					<div class="row">
-						<div class="column"><img class="divider" src="./images/divider2.png"></div>
-					</div>
-					<div class="row">
-						<!-- personal info-->
-						<div class="four wide centered column lt">
-							<div class="wp">
-								<ul id="slider">								
-								<li><img class="ui tiny circular image fl" src="./images/people/liuyang.jpg"/>
-									<p><h5>刘洋<br>信息安全部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/liuyang_photo.jpg"/>
-										<div class="intro-content">
-										<p>余自西北边城而来，姓刘，名洋，未有字，自号青山，入世迄今二十有五矣。少时好读书，尝语父曰：“余生平所愿唯三事耳，一曰天下太平以享人间之乐，二曰读书万卷以正浩然之心，三曰远行万里以明百态之世。”遂及舞象之年，求学千里之外，亦曾远游四方。</p>
-										<p>夫心无远虑者，虽如脱缰之驹，任尔驰骋，然终有力竭之时哉!孟德尝言：“老骥伏枥，志在千里。” 余当铭感五内，以儆己身。彼花甲之年尚有壮志，况余年少，当效其远志，竭力为之！</p>
-										<p>余虽不才，愿献愚驽而事铁路，若能助之兴盛，则人不枉生，岂为憾哉！</p>
-										</div><div class="intro-content">喜欢跑步的朋友可以加我好友<br>
-										Nike+Running<br>
-										liuyangmko0405@126.com<br>
-										</div>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/daijiao.jpg"/>
-									<p><h5 class="name">代娇<br>信息安全部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/daijiao_photo.jpg"/>
-										<div class="intro-content-l">
-										衡中闯出来的疯狂<br>
-										北交迈过来的收敛<br>
-										爱阳光，蓝天<br>
-										爱奔跑，呐喊<br>
-										更爱志同道合的伙伴，读书，共勉<br>
-										审视的灯，照见自己<br>
-										思考的画，灿烂颜色<br>
-										愿玄心，洞见<br>
-										愿妙赏，深情<br>
-										</div>
-									</div>
-								</li>					
-								<li><img class="ui tiny circular image fl" src="./images/people/luweikang.jpg"/>
-									<p><h5>路伟康<br>技术支持部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/luweikang_photo.jpg"/>
-										<div class="intro-content"><p>嘿嘿嘿，大家好！我来自美丽泉城山东济南，酷爱音乐，喜欢运动，加微信有惊喜噢。</p></div>
-										<img class="ui linan image fl intro-img" src="./images/people/luweikang_photo2.jpg"/>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/mateng.jpg"/>
-									<p><h5>马腾<br>技术支持部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/mateng_photo.jpg"/>
-										<div class="intro-content"><p>马腾，山西运城人，毕业于兰州理工大学，爱好多多。一个不爱多说话的人，因为一个未来的成功者都是像我一样一切都要思考过再进行；有一副象征着我学问的蓝色眼镜；有一个名人名：马(化)腾；还当过演员，差点还进了影视圈。</p></div>
-										<img class="ui small image fr intro-img" src="./images/people/mateng_qr.jpg"/>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/quyongkang.jpg"/>
-									<p><h5>屈永康<br>技术支持部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/quyongkang_photo.jpg"/>
-										<div class="intro-content"><p>屈永康，永康永康，永远健康，这是父母对我的美好祝福。朋友是天，朋友是地，有了朋友才能顶天立地；朋友是风，朋友是雨，有了朋友才能呼风唤雨。希望和信息中心大家庭的每一个员工成为好朋友，祝愿所有朋友永远健康。</p></div>
-										<img class="ui small image fr intro-img" src="./images/people/quyongkang_qr.jpg"/>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/lijiahao.jpg"/>
-									<p><h5>李佳豪<br>信息生产调度部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/lijiahao_photo.jpg"/>
-										<div class="intro-content"><p>球场上挥汗如雨，活动上积极参与，工作上努力奋取——我是来自信息生产调度部的2016级新员工李佳豪。我来自北京市密云区，是一个酷爱运动、阳光乐观的大男孩，很开心来到信息中心这个大家庭，同时我很庆幸能遇到这么多优秀的同事们，相信以后的工作和学习中会遇到更多、更精彩的你们！</p></div>
-										<img class="ui small image fr intro-img" src="./images/people/lijiahao_qr.jpg"/>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/renchenying.jpg"/>
-									<p><h5>任宸莹<br>网络管理部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/renchenying_photo.jpg"/>
-										<div class="intro-content"><p>我叫任宸莹，来自网络管理部。典型的工科女，却偏偏爱好文艺，爱一切与音乐有关的事物，爱读书写作旅行，爱简单，爱热闹，爱交朋友。外表与资质平凡，却偏偏有一颗不甘平凡的心，渴望用自己的努力实现梦想，即使困难重重，也要在自己的人生道路上跌跌撞撞而又不失姿态的走下去。</p></div>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/songjian.jpg"/>
-									<p><h5>宋健<br>网络管理部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/songjian_photo.jpg"/>
-										<div class="intro-content-l">宋健，回族，网络管理部。<br>
-										爱好英语口语，跑步，游泳，乒乓球，读书，旅行，牛羊肉。<br>
-										学生时代睡过北京大马路，站过上海高温岗，游过雨后地下室。<br>
-										真诚做人，认真做事，用心工作，主动学习。<br>
-										仰望星空，脚踏实地，不忘初心，明天更好。<br>
-										很荣幸加入如此优秀的团队，愿今后与更多优秀的你们成为好朋友。<br>
-										</div>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/wangaili.jpg"/>
-									<p><h5>王爱丽<br>城市轨道交通系统<br>安全保障技术<br>国家工程实验室</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/wangaili_photo.jpg"/>
-										<div class="intro-content-l">
-										王爱丽 15210583528<br>
-										城市轨道交通系统国家工程实验室<br>
-										毕业于北京交通大学<br>
-										喜欢亲近大自然<br>
-										喜欢一个人静静的做点小学术，曾在《铁道学报》、《中国铁道科学》等期刊发表10余篇论文<br>
-										不求与人相比，但求超越自己，愿在工作中与各位同事共勉<br>
-										</div>
-										<img class="ui small image fr intro-img" src="./images/people/wangaili_qr.jpg"/>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/sunxili.jpg"/>
-									<p><h5>孙喜利<br>城市轨道交通系统<br>安全保障技术<br>国家工程实验室</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/sunxili_photo.jpg"/>
-										<div class="intro-content"><p>我是孙喜利，湖南娄底人，毕业于兰州大学，现在就职于城轨安全保障实验室，平时喜欢魔方、数独、爬山、旅游和睡觉。酷爱吃辣及水果，最爱焖锅、火锅、鸭脖、榴莲和樱桃。梦想是坐着自己公司的车游遍名山，吃遍全国。</p></div>
-										<img class="ui small image fr intro-img" src="./images/people/sunxili_qr.jpg"/>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/yushiyao.jpg"/>
-									<p><h5>于士尧<br>城市轨道交通系统<br>安全保障技术<br>国家工程实验室</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/yushiyao_photo.jpg"/>
-										<div class="intro-content"><p>嗨，大家好，我是于士尧！来自哈尔滨，毕业于北邮，爱篮球、足球、羽毛球；素描、国画还算熟悉，吉他和丽丽也能弹几首；用爱心做饭，用童心追动漫，用好奇心游玩！也许有一天，我会背着吉他去黄石公园看《海贼王》</p></div>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/kongqingwei.jpg"/>
-									<p><h5>孔庆玮<br>（弘远）<br>货运管理事业部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/kongqingwei_photo.jpg"/>
-										<div class="intro-content-l"><p>孔庆玮<br>江湖人称ST，女，92年，双鱼座<br>
-										坐标：北京西直门桥洞底下<br>
-										职业：铲屎官<br>
-										副业：程序员+设计师+小说家<br>
-										毕业院校：北理工+袋鼠国悉尼大学<br>
-										个人签名：我不在图书馆，就在去图书馆的路上。<br><br>
-										PS：楼上那个想背着吉他去黄石公园看《海贼王》的，黄石公园看海贼王确实不错哦，就差吉他了~<br>
-										</p></div>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/linan.jpg"/>
-									<p><h5>李楠<br>（弘远）<br>现代物流事业部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/linan_photo.jpg"/>
-										<div class="intro-content-l"><p>姓名：李楠<br>
-										生日：1991.10<br>
-										兴趣爱好：摄影，游泳，爬山等<br>
-										毕业院校：北京理工大学<br>
-										内容：<br>
-										我非常高兴也非常荣幸的加入到中国铁路信息技术中心这个大家庭中来，这里不仅为我提供了一个成长锻炼、展示自我的良好平台，也让我有机会认识更多的新同事、新朋友。<br>
-										我初来乍到，还有许多方方面面的知识需要向大家学习。我相信，通过我们彼此之间的相互了解和认识，我们不但会成为事业上一起奋斗的战友，更会成为人生中志同道合的朋友。
-										</p></div>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/zhoucheng.jpg"/>
-									<p><h5>周成<br>（弘远）<br>货运管理事业部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/zhoucheng_photo.jpg"/>
-										<div class="intro-content"><p>恐龙一只，史前生物系，勤快王国公民，信息中心IT程序猿一枚。脸大，眼小，腿短。善良，可是冷漠，怕拖累别人。喜欢唱歌，麦霸类型，在办公室也照k不误。喜欢相声小品，特长是说笑话活跃气氛。喜欢书，买了一堆在家里欣赏但是完全找不到时间看。喜欢美人，女性为佳，如果你够帅，男性也可。不喜欢一个人呆着，会难过。缺点是幼稚，单纯，毫无主见，容易相信别人。思想停留在史前，对王子骑白马公主长头发的观念深信不疑。平生理想是找一只有温柔眼神和相同兴趣的白雪公主一起为史前生物的发展做贡献。</p></div>
-										<img class="ui small image fr intro-img" src="./images/people/zhoucheng_qr.jpg"/>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/wangxiaopeng.jpg"/>
-									<p><h5>王小朋<br>（弘远）<br>移动装备事业部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/wangxiaopeng_photo.jpg"/>
-										<div class="intro-content-l"><p>姓名：王小朋<br>微信（qq）530279459<br>学校：中国石油大学（北京）<br>
-										爱好：游泳，看小段子 <br>
-										座右铭：人生就像马拉松，获胜的关键不在于瞬间的爆发，而在于途中的坚持。
-										</p>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/luyuanhui.jpg"/>
-									<p><h5>卢元惠<br>（弘远）<br>运输营销事业部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/luyuanhui_photo.jpg"/>
-										<div class="intro-content"><p>卢元惠，元旦出生来自河北，毕业于英国杜伦大学，高中理科本科俄语，研究生回归大理科软件的怀抱甚是欣喜。生性开朗，活泼外向，喜欢远足、跑步，也爱旅游、摄影，已游遍欧洲、正走向世界，微信在侧，同好约起来！</p></div>
-										<img class="ui small image fr intro-img" src="./images/people/luyuanhui_qr.jpg"/>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/renjingnan.jpg"/>
-									<p><h5>任京楠<br>（弘远）<br>数据平台事业部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/renjingnan_photo.jpg"/>
-										<p class="intro-content-l">疾风码豪</p>
-										<div class="intro-content"><p>京楠•索是数据平台的学徒，是一个百折不屈的男人，还是一名身手敏捷的码农，掌握了传说中的御风码术，能够运用风的力量来编写代码。他拿起键盘，在风的陪伴下踏上征程，向着前方那在夕阳下闪耀着的铁路走去。
-										</p></div>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/linxiaolei.jpg"/>
-									<p><h5>林晓蕾<br>（弘远）<br>质量管理部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/linxiaolei_photo.jpg"/>
-										<div class="intro-content-l"><p>林晓蕾<br>
-										质量管理部<br>
-										毕业于北京工商大学<br>
-										强守卫，强迫症😂<br>
-										虽然爱写字、画画，且不咋地，但乐在其中；<br>
-										虽然爱游泳、狂走，且特来劲，但越来越胖；<br>
-										虽然爱韩语、韩剧，且停不下，但最爱中国；<br>
-										虽然爱吃、爱旅行、爱摄影，但qiong…<br>
-										且行且珍惜❤️ 
-										</p></div>
-										<img class="ui liang image fr intro-img" src="./images/people/linxiaolei_photo2.jpg"/>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/renxinliang.jpg"/>
-									<p><h5>任昕亮<br>（弘远）<br>现代物流事业部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/renxinliang_photo2.jpg"/>
-										<div class="intro-content"><p>这个满脸笑（wei）容（suo）的家伙是下面狂魔任昕亮，性别男爱好男，啊不，爱好女。这货贼爱骑车。他本人看上去文质彬彬的，但是，人不可貌相啊！对了，这货还拍过平面广告你敢信！同样喜欢骑行的朋友+微信哈~</p></div>
-										<img class="ui liang image fr intro-img" src="./images/people/renxinliang_photo.jpg"/>
-										<img class="ui small image fr intro-img" src="./images/people/renxinliang_qr.jpg"/>
-									</div>
-								</li>
-								<li><img class="ui tiny circular image fl" src="./images/people/zuochen.jpg"/>
-									<p><h5>左陈<br>（弘远）<br>基础设施事业部</h5></p>
-									<div class="introduction">
-										<img class="ui linan image fl intro-img" src="./images/people/zuochen_photo.jpg"/>
-										<div class="intro-content"><p>左陈，土生土长北京姑娘一枚，贪吃，爱玩，但做起事来照样认真，绝不给您掉链子。性子直，有啥说啥，关键是笑点特别低。爱动物，并与内些不能为宠物善始善终的主人势不两立。字不咋地，但是却喜欢没事写两笔。爱旅行，爱摄影，额。。。说摄影有点太专业，就是喜欢拍拍照片，志同道合的随时约起哈~Ps：放个样张，还请大神多指点！</p></div>
-										<img class="ui liang image fr intro-img" src="./images/people/zuochen_photo1.jpg"/>
-									</div>
-								</li>
-							</ul>
-							</div>
-						</div>
-						<!-- events -->
-						<div class="twelve wide column rt">
-							<div class="ui blurring event">
-								<div class="ui inverted dimmer"></div>
-								<div class="ui horizontal segments">
-									<div class="ui segment">
-										<img class="ui centered medium rounded image" src="./images/1.gif">
-									</div>
-								</div>								
-								<div class="ui horizontal segments">
-									<!-- events1 -->
-									<div id="event1" class="ui segment e1" onclick="showdimmer1()">
-										<img class="ui centered small rounded image" src="./images/e1.jpg">
-										<p>头牌名媛</p>
-									</div>
-									<!-- events2 -->
-									<div id="event2" class="ui segment e2" onclick="showdimmer2()">
-										<img class="ui centered small rounded image" src="./images/e2.jpg">
-										<p>客官想点谁？</p>
-									</div>
-								</div>
-								<div class="ui attached horizontal segments">
-									<!-- events3 -->
-									<div id="event3" class="ui segment e3" onclick="showdimmer3()">
-										<img class="ui centered small rounded image" src="./images/e3.jpg">
-										<p>下面技术一流</p>
-									</div>
-									<!-- events4 -->
-									<div id="event4" class="ui segment e4" onclick="showdimmer4()">
-										<img class="ui centered small rounded image" src="./images/e4.jpg">
-										<p>眼光不错哟</p>
-									</div>
-								</div>
-								<div class="ui horizontal segments">
-									<!-- events5 -->
-									<div id="event5" class="ui segment e5" onclick="showdimmer5()">
-										<img class="ui centered small rounded image" src="./images/e5.jpg">
-										<p>一个不够？</p>
-									</div>
-									<!-- events6 -->
-									<div id="event6" class="ui segment e6" onclick="showdimmer6()">
-										<img class="ui centered small rounded image" src="./images/e6.jpg">
-										<p>花样应有尽有</p>
-									</div>
-								</div>
-							</div>
-						</div>					
-					</div>
-				</div>
-			</div>
+    <div class="w1 scrollme">
+        <div
+            class="c1 animateme"
+            data-when="exit"
+            data-from="0"
+            data-to="1"
+            data-opacity="0"
+            data-translatex="0"
+            data-rotatez="0"
+        >
+            <div
+                class="t1 animateme"
+                data-when="exit"
+                data-from="0"
+                data-to="1"
+                data-opacity="0"
+                data-translatey="-200"
+                data-rotatez="0"
+            >
+            <h1>一百四十年风雨历程艰难困苦</h1>
+            </div>        
+        </div>
 
-<!-- 高能预警！活动内容过多做好准备 -->
-<!-- 高能预警！活动内容过多做好准备 -->
-<!-- 高能预警！活动内容过多做好准备 -->
-<!-- 活动1 -->
-			<div id="e1" class="ui black message hidden" onclick="hidedimmer1()">
-			<div>
-				<p>
-				冥火乱林，七星冷月。
-				这样的夜，适合杀人，适合打家劫舍。手起刀落鸟兽散，人头掷地无声。
-				此时，四位一看便知身手不凡的剑客正围着一个年轻盗贼。小盗贼虽然也身形矫健，但在眼前的高手面前实属插翅难飞。为首一人长袖青衫无风自动，剑在鞘中呼之欲出，平静的眉心隐隐可以看出怒气。 一般来讲，逍遥剑客行走江湖挥金如土也是常事，不会为三五银两为难盗贼这样的小角色，此情此景，怕是被盗取了什么重要信物。
+    </div>
 
-				其实这个盗贼什么也没盗。
-				估计是认错了。
-				但是人在江湖身不由己，盗贼装扮都差不多，没人听你解释。
+    <div class="w2 scrollme">
+        <div
+            class="c2 animateme"
+            data-when="span"
+            data-from="1"
+            data-to="0"
+            data-opacity="0"
+            data-rotatex="90"
+        >
+            <div
+                class="t2 animateme"
+                data-when="span"
+                data-from="0.5"
+                data-to="1"
+                data-opacity="0"
+                data-translatex="-200"
+                data-rotatez="0"
+            >
+            <h1>十二万公里营业里程稳步前进</h1>
+            </div>
+        </div>
+    </div>
 
-				这个苦逼的盗贼就是我。
-				我欧阳博文，今日怕是要殒命于此了。
+    <div class="w3 scrollme">
+        <div
+            class="c3 animateme"
+            data-when="span"
+            data-from="1"
+            data-to="0"
+            data-opacity="0"
+            data-translatex="-300"
+        >
+            <div
+                class="t3 animateme"
+                data-when="span"
+                data-from="1"
+                data-to="0"
+                data-opacity="0"
+                data-scale="2"
+                data-translatex="0"
+                data-rotatez="0"
+            >
+            <h1>高度集中<br>大联动机<br>半军事化管理<br>国民经济大动脉的建设者-----中国铁路总公司</h1>
+            </div>
+        </div>
+    </div>
 
-				那道银色的剑气直刺我眉心时，我想，如果有来生，我想取一个更靠谱的名字。
-				据说博文这个名字是爹娘求一个说书先生算出来的，说书的说这名字可保我一生荣华富贵。
-				于是第二年战火纷飞家破人亡，我流落街头成了个盗贼。
-				没了荣华富贵不要紧，以后，大概一生也没了。
-				那道银色的剑气离刺破我的脑袋还有一公分。
-				胜败乃兵家常事，大侠请重新……
+    <div class="w4 scrollme">
+        <div
+            class="c4 animateme"
+            data-when="span"
+            data-from="1"
+            data-to="0"
+            data-opacity="0"
+            data-rotatez="90"
+        >
+            <div
+                class="t4 animateme"
+                data-when="span"
+                data-from="1"
+                data-to="0"
+                data-opacity="0"
+                data-translatex="-300"
+                data-rotatez="-45"
+            >
+            <h1>高科技浪潮如雷贯耳席卷全球</h1>
+            </div>
+        </div>
+    </div>
 
-				等一下！
-				剑气消失了。
-				我还活着。
-				按照传奇里的套路，如果命运突然要转折，应该会发生一些异象。比如天空一声巨响，或者狂风骤起苍穹变色。
-				但那时那刻什么也没有发生。江湖首屈一指的剑客发出的毫不留情的剑气，莫名其妙消失了。
-				杀气逼人的剑客不解地看着我，我也不解地看着他。
-				这时我看到了他身后又走来一个年轻人。
-				看装束像个游山玩水的旅人。手里拿着一只玉笛。
-				他唱着一首我没有听过的歌。
-				“谁家今夜玉笛暗飞声，那年他和她手提一盏灯……”
-				年轻人走近。
-				然后路过，走远……
-				诶等等！大侠您不应该按照套路路见不平拔刀相助一下嘛。
-				“高人救……”
-				我话音还未落，还没反应过来时，四人中身形最为魁梧的大汉已拔出巨剑刺向旅者。
-				依旧是还没反应过来时，那名大汉头上插着笛子飞了出去化作晨星。
-				为首的青衫人面色一沉，“阁下窃我信物，又伤我友人，莫不是跟苏某有什么过节。”
-				旅人停下脚步，“信物？”
-				“就是方才您手中的玉笛。”
-				“捡的。”
-				“……”
-				“但伤我友人确实为阁下所为，若不给予个交代，恐难就此放走阁下。”
-				“怎么交代。”
-				“战。”
-				“你确定？”
-				那名青衫剑客剑气全开，忽然凌空而立！在剑道上，只有得到修仙之人才有此乘风的本事。我大惊，仔细一观察，风在他脚下旋成漩涡卷起乱石落叶，而他正是踩着这乱石落叶升至半空，此等境界虽未羽化成仙，但离仙人之辈也不远了。功力乃常人望尘莫及，就连他身边的两名气宇轩昂的剑客都难掩羡嫉之色。“在下蜀山派大弟子苏江右，还望赐教。”
-				然后他和刚刚的大汉一样飞了出去化作晨星。
-				我偷偷扫了一眼余下的二人，发现他二人也与我一样懵逼。
-				这名旅者同样带着一把古色古香佩剑，但从始至终剑未出鞘，系在腰间连动都未动。好像他从来都没有出手，苏大侠就那样飞出去了。
-				两名剑客回过神来，相视一眼，心照不宣地遁地而逃。
-				短短数秒，空寂林间只留我和那名年轻的旅人。
+    <div class="w5 scrollme">
+        <div
+            class="c5 animateme"
+            data-when="span"
+            data-from="1"
+            data-to="0"
+            data-opacity="0"
+            data-translatex="300"
+        >
+            <div
+                class="t5 animateme"
+                data-when="span"
+                data-from="1"
+                data-to="0"
+                data-opacity="0"
+                data-translatey="-300"
+                data-rotatey="90"
+            >
+            <h1>信息化铁路生机焕发再登高峰</h1>
+            </div>
+        </div>
+    </div>
 
-				“桥下住着一双有心人，桥上来去匆匆的冬与春……”
-				欧阳博文啊欧阳博文，大难不死必有后福啊此天降良缘切不可错失良机。
-				“高人留步！”
-				“高人是何方神圣？”
-				“高人请收我为徒！”
-				我就这样一路喊着跟着他出了树林。
-				在我求了257次之后，喧闹的市井旁这位旅客终于跟我说了话。
-				“你有钱么？”
-				“……有……”
-				“我刚来此处，人生地不熟，陪我转转吧。”
-				我带着他去了城里最好的茶馆，花了口袋里所有的钱。我知道，人在世上，往往倾家荡产也难寻一贵人。
+    <div class="w6 scrollme">
+        <div
+            class="c6 animateme"
+            data-when="span"
+            data-from="1"
+            data-to="0"
+            data-opacity="0"
+            data-translatey="0"
+        >
+        <div
+                class="t6 animateme"
+                data-when="span"
+                data-from="1"
+                data-to="0"
+                data-opacity="0"
+                data-scale="2"
+                data-translatex="0"
+            >
+            <h1>高标准,讲科学,不懈怠<br>铁路信息化的助推器----中国铁路信息技术中心</h1>
+            </div>
+        </div>
+    </div>
 
-				年轻的旅客放下茶杯，问我。
-				“你想学什么。”
-				“学刀。”
-				话一出口我就后悔了，这位旅客就算是神仙，也是个用剑的神仙。
-				不过他竟笑了，“为什么不学剑？”
-				“剑是用来耍帅的，刀是用来杀人的。”
-				旅客的目光看向窗外，窗外云淡风轻。“以前，我有个朋友也说过这句话。”
-				“可是我不收徒弟的。”
-				“并且我也不会武艺。”
-				我起身，跪在这个看起来年纪比我还小的旅客面前。
-				“我欧阳博文，只求跟着您见见世面，无论习武还是赏月。”
-				那几秒过得很寂静。
-				他扶我起来，“这个世界的人真有意思。”
-				“那你就跟着我走走吧。”
+    <div class="w7 scrollme">
+        <div
+            class="c7 animateme"
+            data-when="span"
+            data-from="1"
+            data-to="0"
+            data-opacity="0"
+            data-translatex="-500"
+        >
+            <div
+                class="t7 animateme"
+                data-when="span"
+                data-from="1"
+                data-to="0"
+                data-opacity="0"
+                data-translatex="-500"
+            >
+            <h1>筚路蓝缕,玉汝于成<br>无数前辈白手起家创辉煌</h1>
+            </div>
+        </div>
+    </div>
 
-				“我叫金崇。”
+    <div class="w8 scrollme">
+        <div
+            class="c8 animateme"
+            data-when="span"
+            data-from="1"
+            data-to="0"
+            data-opacity="0"
+            data-translatex="500"
+        >
+            <div
+                class="t8 animateme"
+                data-when="span"
+                data-from="1"
+                data-to="0"
+                data-opacity="0"
+                data-translatex="500"
+            >
+            <h1>栉风沐雨,薪火相传<br>热血青年事业自有后来人</h1>
+            </div>
+        </div>
+    </div>
 
-				---未完待续---
+    <div class="w9 scrollme">
+        <div
+            class="c9 animateme"
+            data-when="span"
+            data-from="1"
+            data-to="0"
+            data-opacity="0"
+            data-translatez="500"
+        >
+        <div
+            class="t9 animateme"
+            data-when="span"
+            data-from="1"
+            data-to="0"
+            data-translatex="-300"
+        >
+        <h1>现在,信息技术中心又一次迎来了新鲜血液<br>他们满怀激情,奋发向上</h1>
+        </div>
+        <div
+            class="t10 animateme"
+            data-when="span"
+            data-from="1"
+            data-to="0"
+            data-translatex="300"
+        >
+        <h1>从此我们携手并肩,开拓进取</h1>
+        </div>
+        <div
+            class="t11 animateme"
+            data-when="span"
+            data-from="1"
+            data-to="0"
+            data-scale="2"
+        >
+        <h1>你们准备好</h1>
+        </div>
+        <div
+            class="t12 animateme"
+            data-when="span"
+            data-from="1"
+            data-to="0"
+            data-scale="2"
+        >
+        <h1>认识他们了吗?</h1>
+        </div>
+        </div>
+    </div>
 
-				<br>敢不敢多几行让我滚动一下
-				<br>敢不敢多几行让我滚动一下
-				<br>敢不敢多几行让我滚动一下
-				<br>敢不敢多几行让我滚动一下
-				<br>敢不敢多几行让我滚动一下
-				</p>
-			</div>
-			</div>
+    <div class="w10 scrollme">
+        <div
+            class="icon animateme"
+            data-when="exit"
+            data-from="1"
+            data-to="0"
+            data-rotatey="180"
+        >
+        <a href="main.html"><img src="images/right-icon.png"></a>
+        </div> 
+    </div>
 
-<!-- 活动2 -->
-			<div id="e2" class="ui black message hidden" onclick="hidedimmer2()">
-			<div>
-				<p>
-				冥火乱林，七星冷月。
-				这样的夜，适合杀人，适合打家劫舍。手起刀落鸟兽散，人头掷地无声。
-				此时，四位一看便知身手不凡的剑客正围着一个年轻盗贼。小盗贼虽然也身形矫健，但在眼前的高手面前实属插翅难飞。为首一人长袖青衫无风自动，剑在鞘中呼之欲出，平静的眉心隐隐可以看出怒气。 一般来讲，逍遥剑客行走江湖挥金如土也是常事，不会为三五银两为难盗贼这样的小角色，此情此景，怕是被盗取了什么重要信物。
-				</p>
-			</div>
-			</div>
-
-<!-- 活动3 -->
-			<div id="e3" class="ui black message hidden" onclick="hidedimmer3()">
-			<div>
-				<p>
-				那道银色的剑气直刺我眉心时，我想，如果有来生，我想取一个更靠谱的名字。
-				据说博文这个名字是爹娘求一个说书先生算出来的，说书的说这名字可保我一生荣华富贵。
-				于是第二年战火纷飞家破人亡，我流落街头成了个盗贼。
-				没了荣华富贵不要紧，以后，大概一生也没了。
-				那道银色的剑气离刺破我的脑袋还有一公分。
-				胜败乃兵家常事，大侠请重新……
-				</p>
-			</div>
-			</div>
-
-<!-- 活动4 -->
-			<div id="e4" class="ui black message hidden" onclick="hidedimmer4()">
-			<div>
-				<p>
-				那名青衫剑客剑气全开，忽然凌空而立！在剑道上，只有得到修仙之人才有此乘风的本事。我大惊，仔细一观察，风在他脚下旋成漩涡卷起乱石落叶，而他正是踩着这乱石落叶升至半空，此等境界虽未羽化成仙，但离仙人之辈也不远了。功力乃常人望尘莫及，就连他身边的两名气宇轩昂的剑客都难掩羡嫉之色。“在下蜀山派大弟子苏江右，还望赐教。”
-				然后他和刚刚的大汉一样飞了出去化作晨星。
-				我偷偷扫了一眼余下的二人，发现他二人也与我一样懵逼。
-				这名旅者同样带着一把古色古香佩剑，但从始至终剑未出鞘，系在腰间连动都未动。好像他从来都没有出手，苏大侠就那样飞出去了。
-				两名剑客回过神来，相视一眼，心照不宣地遁地而逃。
-				短短数秒，空寂林间只留我和那名年轻的旅人。
-				</p>
-			</div>
-			</div>
-
-<!-- 活动5 -->
-			<div id="e5" class="ui black message hidden" onclick="hidedimmer5()">
-			<div>
-				<p>
-				“桥下住着一双有心人，桥上来去匆匆的冬与春……”
-				欧阳博文啊欧阳博文，大难不死必有后福啊此天降良缘切不可错失良机。
-				“高人留步！”
-				“高人是何方神圣？”
-				“高人请收我为徒！”
-				我就这样一路喊着跟着他出了树林。
-				在我求了257次之后，喧闹的市井旁这位旅客终于跟我说了话。
-				“你有钱么？”
-				“……有……”
-				“我刚来此处，人生地不熟，陪我转转吧。”
-				我带着他去了城里最好的茶馆，花了口袋里所有的钱。我知道，人在世上，往往倾家荡产也难寻一贵人。
-				</p>
-			</div>
-			</div>
-
-<!-- 活动6 -->
-			<div id="e6" class="ui black message hidden" onclick="hidedimmer6()">
-			<div>
-				<p>
-				---未完待续---
-				</p>
-			</div>
-			</div>
-
-			<div class="two wide column rightbg"></div>
-		</div>
-	</div>
-</div>
-<!--footer begin -->
-<footer>
-	<div class="copyrights">
-		<p>© 版权所有&nbsp;&nbsp;&nbsp;中国铁路信息技术中心</p>
-	</div>
-</footer>
-
-<script type="text/javascript">
-$('.banner').MotionBanner({
-	autoRollingTime:3000,
-	bgSpeed:1000,
-	motion:{
-		end:null
-	}
-})
-function showdimmer1() {
-	$('#e1').transition('scale');
-	$('.event').dimmer('show');
-}
-function hidedimmer1() {
-	$('#e1').transition('scale');
-	$('.event').dimmer('hide');
-}
-function showdimmer2() {
-	$('#e2').transition('scale');
-	$('.event').dimmer('show');
-}
-function hidedimmer2() {
-	$('#e2').transition('scale');
-	$('.event').dimmer('hide');
-}
-function showdimmer3() {
-	$('#e3').transition('scale');
-	$('.event').dimmer('show');
-}
-function hidedimmer3() {
-	$('#e3').transition('scale');
-	$('.event').dimmer('hide');
-}
-function showdimmer4() {
-	$('#e4').transition('scale');
-	$('.event').dimmer('show');
-}
-function hidedimmer4() {
-	$('#e4').transition('scale');
-	$('.event').dimmer('hide');
-}
-function showdimmer5() {
-	$('#e5').transition('scale');
-	$('.event').dimmer('show');
-}
-function hidedimmer5() {
-	$('#e5').transition('scale');
-	$('.event').dimmer('hide');
-}
-function showdimmer6() {
-	$('#e6').transition('scale');
-	$('.event').dimmer('show');
-}
-function hidedimmer6() {
-	$('#e6').transition('scale');
-	$('.event').dimmer('hide');
-}
-$(document).ready(function(){
-	s = new slider({id:'slider', auto:1});
-	$('#slider').mouseenter(function(){
-		s.pause();
-	});
-	$('#slider').mouseleave(function(){
-		s.resume();
-	});
-	$('.wp').delegate('li', 'mouseenter', function(){
-		intro=$(this).find('.introduction').clone();
-		position=$(this).position();
-		intro.toggleClass('introduction intro-popup').css({top:position.top+10, left:300});
-		wp=$('.wp');
-		wp.append(intro);
-		$('.event').dimmer('show');
-	});
-	$('.wp').delegate('li', 'mouseleave', function(){
-		$('.wp .intro-popup').remove();
-		$('.event').dimmer('hide');
-	});	
-});
-</script>
 </body>
 </html>
