@@ -114,8 +114,9 @@ header {
 }
 .message p{
 	text-indent: 2em;
+	font-size: 20px;
 	font-family: STFangsong;
-	line-height:25px;
+	line-height: 25px;
 }
 .message img{
 	padding: 10px;
