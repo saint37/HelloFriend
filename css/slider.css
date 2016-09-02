@@ -10,11 +10,11 @@
 }
 .wp {
     position: relative;
-    height: 989px;
+    height: 1100px;
 }
 .wp #slider {
     position: absolute;
-    height: 989px;
+    height: 1100px;
     min-width: 250px;
     padding: 0 20px;
     left: 0;
