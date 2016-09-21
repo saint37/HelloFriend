@@ -10,7 +10,7 @@
 }
 .wp {
     position: relative;
-    height: 1100px;
+    height: 1110px;
 }
 .wp #slider {
     position: absolute;
@@ -67,7 +67,7 @@
     margin-top: 15px !important;
 }
 .intro-popup {
-    width: 500px;
+    width: 600px;
     position: absolute;
     color: #fff;
     background-color: black;
@@ -76,13 +76,14 @@
     padding: 10px;
     opacity: 0.8; 
     z-index: 100;
+    font-size: 16px;
 }
 .circular{
     height: 80px !important;
 }
 .linan{
-    width: 250px !important;
+    width: 300px !important;
 }
 .liang{
-    width: 230px !important;
+    width: 280px !important;
 }
