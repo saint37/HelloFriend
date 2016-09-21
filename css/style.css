@@ -1,4 +1,4 @@
-﻿body{
+body{
 	position:relative;
 	text-align: center;
 }
@@ -99,27 +99,14 @@ header {
 .ui.dimmer{
 	z-index: 10 !important;
 }
-.message{
-	left: 50%;
-	top: 50%;
-	margin-top:-300px !important;
-	margin-left: -400px !important; 
-	width: 800px;
-	height: 600px;
-	position: fixed !important;
-	overflow: auto;
-	z-index: 10;
-	opacity: 0.9;
-    text-align:justify;
-}
-.message p{
+.modal p{
 	text-indent: 2em;
 	font-size: 20px;
 	font-family: STFangsong;
 	line-height: 25px;
 }
-.message img{
-	padding: 10px;
+.modal img{
+	padding-bottom: 25px;
 }
 .closemsg{
 	padding: 0 !important;
